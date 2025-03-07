@@ -1,0 +1,14 @@
+{% extends 'contenu/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"></div>
+        {% for article in list_articles  %}
+        <h2> {{article.title}}</h2>
+        {% endfor %}
+ 
+    </div>
+
+</div>
+{% endblock content %}
